@@ -1,0 +1,212 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway&family=Ubuntu:wght@300&display=swap" rel="stylesheet">');
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav bar section */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Nav bar section: image */
+
+#logo {
+    padding: 5px;
+    margin: 3px 5px;
+}
+
+#logo img {
+    height: 54px;
+    width: 54px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+
+}
+
+#navbar ul li a {
+    padding: 3px 5px;
+    margin: 3px 7px;
+    display: block;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    background-color: black;
+    color: white;
+    display: block;
+}
+
+/* Home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    background: url('navPic.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+}
+
+#home p {
+    margin: 3px;
+
+}
+
+#home h1 {
+
+    margin: 7px 30px;
+    font-size: 2rem
+}
+
+.btn {
+    background-color: rgb(244, 120, 120);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 30px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+
+    background-color: white;
+    color: black;
+
+}
+
+#middle {
+
+    text-align: center;
+    padding: 30px;
+    margin: 180px 500px;
+}
+
+
+
+
+#services {
+    margin: 34px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+#services .box {
+
+    border: 2px solid black;
+    background-color: rgb(250, 225, 193);
+    border-radius: 30px;
+    margin: 14px;
+    padding: 30px;
+
+
+}
+
+#services .box:hover {
+    box-shadow: 10px 10px 10px rgb(248, 235, 218);
+}
+
+#services .box img {
+
+    width: 300px;
+    height: 300px;
+}
+
+#bottom {
+    position: relative;
+}
+
+#bottom::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+    background: url('pic-2.jpg') no-repeat center center/cover;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+
+#bottom h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#register input {
+    width: 100%;
+    padding: .5rem;
+}
+
+#register textarea {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#register form {
+    width: 40%;
+}
+
+#register label {
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
